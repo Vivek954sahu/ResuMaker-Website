@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="https://www.flaticon.com/free-icons/document" title="document icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Resumaker | Create ATS friendly Resume.</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h2>ResuMaker</h2></div>
+
+        <div class="navbar">
+            <a href="#" class="active">Resume</a>
+            <a href="#">Cover Letter</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <button id="start">Get Started</button>
+    </header>
+
+    <main>
+        <!--form section-->
+        <section class="form-section">
+            <h2>Enter Your Details Here:</h2>
+
+            <form action="" id="resume-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="summary">Summary:</label>
+                <textarea name="summary" id="summary" rows="4"></textarea>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" >
+
+                <label for="education">Education:</label>
+                <textarea name="education" id="education" rows="6"></textarea>
+
+                <label for="experience">Experience:</label>
+                <textarea name="experience" id="experience" rows="8"></textarea>
+
+                <label for="projects">Projects:</label>
+                <textarea name="projects" id="projects" rows="8"></textarea>
+
+                <label for="Achievements">Achievements:</label>
+                <textarea name="Achievements" id="Achievements" rows="4"></textarea>
+
+                <button type="button" id="generate-resume">Generate</button>
+                <button type="button" id="download">Download</button>
+                
+            </form>
+        </section>
+
+        <section class="resume-section" id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-output"></div>
+        </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    min-width: 375px;
+    height: 5rem;
+    background-color: rgb(9, 160, 225);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo{
+    width:15%;
+    height:3.5rem;
+    text-align: center;
+}
+.logo h2{
+    padding: 8px 5px ;
+    font-size: 32px;
+    color: rgb(0, 34, 128);
+}
+header .navbar{
+    width: 40%;
+    height:3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .navbar a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: 2px;
+}
+.navbar a:hover,  a .active{
+    border-bottom:2px solid white;
+
+}
+header button{
+    width:15%;
+    height: 3rem;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+}
+ header button:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+h1,h2{
+    margin-bottom: 10px;
+}
+
+.form-section{
+    flex: 1;
+    margin-right: 20px;
+    background-color: rgba(182, 230, 250, 0.806);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+}
+
+.form-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,textarea,button{
+    margin-top:10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ form button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover{
+    background-color: rgb(245, 225, 196);
+    color: black;
+    font-weight: 800;
+}
+
+.resume-section{
+    flex: 1;
+    background: rgba(182, 230, 250, 0.806);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.resume-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resume-output{
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
